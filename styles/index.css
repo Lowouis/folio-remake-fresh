@@ -9,17 +9,16 @@
 
 /* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
-    width: 10px;
+    width: 8px;
 }
 
 *::-webkit-scrollbar-track {
-    background: #ffffff;
+    background: transparent;
 }
 
 *::-webkit-scrollbar-thumb {
     background-color: #8589ff;
     border-radius: 40px;
-    border: 3px solid #ffffff;
 }
 
 
@@ -270,22 +269,29 @@ section{
     display: flex;
     flex-direction: column;
     border-left: solid 1px #7E83FF;
-
+    height: 290px;
     padding: 0;
     margin-right: 15px;
 }
 #works nav a{
     padding: 25px;
     color:#6285FF;
+    user-select: none;
+
+
 }
 
 #works nav a:hover{
-    border-left:solid 3px #7E83FF;
     cursor: pointer;
     z-index: 10;
     background-color: rgba(255,255,255,.02);
 }
-
+.transparent-border{
+    border : 3px solid transparent ;
+}
+.hold-left-border{
+    border-left: solid 3px #7E83FF;
+}
 #works article{
     display: grid;
     flex-direction: column;
@@ -330,7 +336,7 @@ footer p:hover{
 
 
 .d-none{
-    visibility: collapse;
+    visibility: hidden;
 }
 
 .perks-ord{

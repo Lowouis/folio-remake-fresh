@@ -1,5 +1,5 @@
 <?php
-$menu = ["ABOUT", "WORKS","PERKS","CONTACT"];
+$menu = ["about", "works","perks","contact"];
 $logo = ["Javascript", "HTML","CSS","C","Python", "Php", "Twig","Java"];
 ?>
 
@@ -10,6 +10,7 @@ $logo = ["Javascript", "HTML","CSS","C","Python", "Php", "Twig","Java"];
     <title>Louis'dev</title>
     <link rel="stylesheet" type="text/css" href="styles/index.css">
     <script src="https://kit.fontawesome.com/6d9cc71036.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="data/img/icone.ico">
 
 </head>
 <body>
@@ -64,14 +65,14 @@ $logo = ["Javascript", "HTML","CSS","C","Python", "Php", "Twig","Java"];
 
 <section id="works" class="cat">
     <h1><a class="c-number">02.</a>Works</h1>
-    <div class="grid-1-4">
+    <div id="navbar-works" class="grid-1-4">
         <nav>
-            <a class="fade star">A* Algorithm</a>
-            <a class="fade">A* Algorithm</a>
-            <a class="fade">A* Algorithm</a>
-            <a class="fade">A* Algorithm</a>
+            <a class="ab fade switcha transparent-border">A* Algorithm</a>
+            <a class="ab fade nim transparent-border">Nim Game</a>
+            <a class="ab fade bw transparent-border">Boat War</a>
+            <a class="ab fade morpion transparent-border">Morpion IA</a>
         </nav>
-        <div class="layers">
+        <div id="switcha" class="layers">
             <article class="star content">
                 <h2>A* Solver Algorithm</h2>
                 <h3>2021</h3>
@@ -86,20 +87,7 @@ $logo = ["Javascript", "HTML","CSS","C","Python", "Php", "Twig","Java"];
                 </div>
 
             </article>
-            <article class="d-none nim content">
-                <h2>A* Solver Algorithm</h2>
-                <h3>2022</h3>
-                <p>Worked with a team of three designers to build a marketing website and e-commerce
-                    platform for blistabloc, an ambitious startup originating from Northeastern
-                    Helped solidify a brand direction for blistabloc that spans both packaging and web
-                    Interfaced with clients on a weekly basis, providing technological expertise
-                </p>
-                <div class="add">
-                    <a  href="https://github.com/Lowouis/ricochet-robot" target=”_blank” class="fade btn hover">Watch on github</a>
-                    <a target=”_blank” href="data/files/astarreport_fr.pdf" class="btn fade hover"> PDF Report</a>
-                </div>
 
-            </article>
         </div>
 
 
@@ -123,7 +111,7 @@ $logo = ["Javascript", "HTML","CSS","C","Python", "Php", "Twig","Java"];
     <h1><a class="c-number">04.</a>What's next </h1>
     <p>Although I’m not currently looking for any new opportunities,
         my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!</p>
-    <a class="btn fade hover" href=""mailto:louisguritapro@gmail.com">Get in touch</a>
+    <a class="btn fade hover" href="mailto:louisguritapro@gmail.com" >Get in touch</a>
 </section>
 
 
