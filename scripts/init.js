@@ -29,31 +29,24 @@ function SelectedButton(selectedClass,target,classToCompare){
         let brothers =  target.parentNode.children
         for (let i=0; i < brothers.length ; i++){
             if(target.innerHTML !== brothers[i].innerHTML){
-                clearBorder(brothers[i],target)
+                clearBorder(brothers[i])
             }
         }
         target.classList.add("hold-left-border")
-
+        changeArticle(target)
     }
 }
 
-function clearBorder(element,target){
+function clearBorder(element){
     element.classList.remove("hold-left-border")
     element.classList.add("transparent-border")
 }
 
+function changeArticle(target){
+   document.getElementById('switcha').innerHTML = articles[target.classList[0]]
+}
 
-
-
-VanillaTilt.init(document.querySelector(".menu a"), {
-    max: 50,
-    speed: 600
-});
-
-
-
-let articles = [algo,nim, bw, morpion]
-let names = ['algo','nim', 'bw', 'morpion']
+// 'switcha' <= ou j'insere l'article choisis
 
 
 let algo = '<article class="star content">\n' +
@@ -103,7 +96,7 @@ let bw = '<article class="bw content">\n' +
     '            </article> '
 
 let morpion = '<article class="morpion content">\n' +
-    '                <h2>Boat War Java App</h2>\n' +
+    '                <h2>Morpion IA</h2>\n' +
     '                <h3>2021</h3>\n' +
     '                <p>Worked with a team of three designers to build a marketing website and e-commerce\n' +
     '                    platform for blistabloc, an ambitious startup originating from Northeastern\n' +
@@ -116,3 +109,16 @@ let morpion = '<article class="morpion content">\n' +
     '                </div>\n' +
     '\n' +
     '            </article> '
+
+const articles = {
+    'star' : algo,
+    'nim' : nim,
+    'bw' : bw,
+    'morpion' : morpion
+}
+
+
+VanillaTilt.init(document.querySelector(".menu a"), {
+    max: 80,
+    speed: 600
+});
