@@ -53,6 +53,11 @@ p{
     font-size: var(--p-size);
 }
 
+
+body{
+    background-color:rgba(0,0,0,0);
+}
+
 html{
     background-color: #020C1B;
 }
